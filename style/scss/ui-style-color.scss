@@ -1,0 +1,107 @@
+$color100:#1F2041;
+$color75:#575871;
+$color50:#8F90A0;
+$color25:#C7C7CF;
+$color5:#F3F4F5;
+$colorpur:#BC9CFF;
+$colorgr:#6FCF97;
+
+.logo-small {
+	width: 48px;
+	height:48px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom:67px;
+}
+.content{
+	max-width: 1132px;
+	font-size: 19px;
+	color:$color100;
+	margin-left:150px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.container {
+	font-size: 19px;
+	line-height: 147%;
+		&__card {
+		max-width: 282px;
+		margin-bottom:20px;
+		display:flex;
+		flex-direction: row;
+		justify-content: flex-start;
+	}
+
+	&__fill {
+		width: 70px;
+		height: 70px;
+		border-radius: 6px;
+		margin-right:40px;
+	}
+
+	&__color-100 {
+		background-color:$color100;
+	}
+	&__color-75 {
+		background-color:$color75;
+	}
+	&__color-50 {
+		background-color:$color50;
+	}
+	&__color-25 {
+		background-color:$color25;
+	}
+	&__color-5 {
+		background-color:$color5;
+	}
+	&__color-purple {
+		background-color:$colorpur;
+	}
+	&__color-green {
+		background-color:$colorgr;
+	}
+	&__text-subtitle {
+		font-weight: 700;
+	}
+}
+
+/******* Font**********/
+.font{
+	&__container{
+		color:$color100;
+		line-height: 121%;
+		display:grid;
+		grid-template-columns: 67px 369px;
+	}
+
+	&__name-color {
+		color:$color25;
+		text-align: right;
+	}
+
+	&__size-h1 {
+		font-size: 24px;
+	}
+	&__size-h2 {
+		font-size: 19px;
+	}
+	&__size-h3 {
+		font-size: 12px;
+	}
+	&__size-h4 {
+		font-size: 14px;
+	}
+	&__example {
+		margin-bottom:50px;
+		margin-left:30px;
+	}
+
+	&__size-weight {
+		font-weight: 700;
+	}
+	&__size-uppercase{
+		text-transform: uppercase;
+	}
+}

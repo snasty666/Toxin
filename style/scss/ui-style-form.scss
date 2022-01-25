@@ -1,0 +1,163 @@
+$color100:#1F2041;
+$color75:#575871;
+$color50:#8F90A0;
+$color25:#C7C7CF;
+$color5:#F3F4F5;
+$colorpur:#BC9CFF;
+$colorgr:#6FCF97;
+
+.logo-small {
+	width: 48px;
+	height:48px;
+	margin-top: 30px;
+	margin-left: 30px;
+	margin-bottom:67px;
+}
+.content{
+	max-width: 1132px;
+	font-size: 19px;
+	color:$color100;
+	margin-left:150px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+/******* Text Field *********/
+
+.textfield {
+	width:320px;
+	display: flex;
+	flex-direction: column;
+
+	&__label-wrapper {
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 116%;
+		color:$color100;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom:5px;
+	}
+
+	&__label-state {
+		color:$color50;
+	}
+	&__input{
+		width:320px;
+		line-height: 171%;
+		border-radius: 4px;
+		padding-left:15px;
+		padding-top:13px;
+		padding-bottom: 13px;
+		margin-bottom: 20px;
+
+	}
+	&__input-default{
+		color:$color25;
+		border:$color25 1px solid;
+
+	}
+	&__input-hover{
+		color:$color50;
+		border:$color50 1px solid;
+	}	
+}
+
+
+/************ dropdown **************/
+.dropdown, .dropdowndate {
+	width:320px;
+	display: flex;
+	flex-direction: column;
+
+	&__label {
+		font-size: 12px;
+		font-weight: 700;
+		line-height: 116%;
+		color:$color100;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-between;
+		margin-bottom:5px;
+	}
+
+	&__wrapper {
+		width:320px;
+		color:$color100;
+		border:$color25 1px solid;
+		border-radius: 4px;
+		padding-left:15px;
+		padding-top:13px;
+		padding-bottom: 13px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__placeholder {
+		color:$color75;
+		line-height: 171%;
+	}
+
+	&__item-visually-hidden {
+		display:none;
+	}
+}
+.dropdowndate{
+	width: 266px;
+		&__wrapper{
+			width: 266px;
+	}
+}
+.dropdown__arrow{
+	font-size: 12px;
+	color:$color50;
+	padding-right: 16px;
+}
+/*************** date input**********/
+.dropdown__wrap{
+	width: 320px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.textfield__date-up{
+	text-transform: uppercase;
+}
+
+.dropdown {
+	&__date-small{
+		width:150px;
+	}
+
+	&__date-input {
+		width:150px;
+		color:$color75;
+		border-color: $color25;
+	}
+}
+.email-subscribe__wrapper{
+	position: absolute;
+}
+.arrow-forward{
+	width: 44px;
+	height: 44px;
+	font-size: 20px;
+
+	position:relative;
+	bottom:56px;
+	left:280px;
+
+}
+._icon-arrow_forward{
+	background:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+	-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	color:#8BA4F9;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/UI_кит/style/body.css">
+	<link rel="stylesheet" href="/UI_кит/style/css/ui-style-form.css">
+	<link rel="stylesheet" href="/UI_кит/style/iconfonts.css">
+	<title>UI-кит form elements</title>
+</head>
+<body>
+	<div class="logo-small">
+		<img src="img/logo.svg" alt="Toxin">
+	</div>
+	<div class="textfield textfield-active">
+		<form action="#" method="post" class="textfield__form">
+			<div class="textfield__label-wrapper">
+				<label for="email"> text field </label>
+				<span class="textfield__label-state"> default </span>
+			</div>
+			<input name="email" type="email" class="textfield__input textfield__input-default" id="email" placeholder="Email" autocomplete="email">
+		</form>
+	</div>
+	<div class="textfield textfield-hover">
+		<form action="#" method="post" class="textfield__form">
+			<div class="textfield__label-wrapper">
+				<label for="text-input"> text field </label>
+				<span class="textfield__label-state"> hover/focus </span>
+			</div>
+			<input name="text-input" type="text" class="textfield__input textfield__input-hover" id="text-input" placeholder="This is pretty awesome">
+		</form>
+	</div>
+	<div class="dropdown dropdown__guest-small">
+		<span class="dropdown__label"> dropdown </span>
+		<div class="dropdown__wrapper">
+			<div class="dropdown__placeholder"> <span>Сколько гостей</span></div>
+			<span class="_icon-expand_more dropdown__arrow"></span>
+			<ul class="dropdown__items dropdown__item-visually-hidden"> 
+				<li class="dropdown__item-visually-hidden dropdown__item-adult">Взрослые</li>
+				<li class="dropdown__item-visually-hidden dropdown__item-child">Дети</li>
+				<li class="dropdown__item-visually-hidden dropdown__item-infant">Младенцы</li>
+			</ul>
+		</div>
+	</div>
+	<div class="textfield input__date">
+		<form action="#" method="post" class="textfield__form">
+			<div class="textfield__label-wrapper">
+				<label for="date-input"> masked text field </label>
+			</div>
+			<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up" id="date-input">
+		</form>
+	</div>
+	<div class="dropdown__wrap"> 
+		<div class="textfield dropdown__date-small">
+			<form action="#" method="post" class="textfield__form dropdown__date-form">
+				<div class="textfield__label-wrapper dropdown__date-label">
+					<label for="date-input"> date Dropdown </label>
+				</div>
+				<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up dropdown__date-input" id="date-input">
+			</form>
+		</div>
+		<div class="textfield dropdown__date-small">
+			<form action="#" method="post" class="textfield__form dropdown__date-form">
+				<div class="textfield__label-wrapper dropdown__date-label">
+					<label for="date-input"> date Dropdown </label>
+				</div>
+				<input name="date-input" type="date" class="textfield__input textfield__input-hover  textfield__date-up dropdown__date-input" id="date-input">
+			</form>
+		</div>
+	</div>
+	<div class="dropdowndate dropdown__date">
+		<span class="dropdowndate__label"> filter date dropdown </span>
+		<div class="dropdowndate__wrapper">
+			<div class="dropdowndate__placeholder"> <span>19 авг - 23 авг</span></div>
+			<span class="_icon-expand_more dropdown__arrow"></span>
+<!-- Как-то надо будет вставлять выпадающий календарь -->
+		</div>
+	</div>
+	<div class="textfield textfield-active">
+		<form action="#" method="post" class="textfield__form">
+			<div class="textfield__label-wrapper">
+				<label for="email-subscribe"> subscription text field </label>
+			</div>
+			<div class="email-subscribe__wrapper">
+				<input name="email-subscribe" type="email" class="textfield__input textfield__input-default" id="email-subscribe" placeholder="Email" autocomplete="email">
+				<div class="arrow-forward"><span class="_icon-arrow_forward"></span>
+			</div>
+		</div>
+		</form>
+	</div>
+	
+</body>
+</html>

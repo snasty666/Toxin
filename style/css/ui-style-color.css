@@ -1,0 +1,112 @@
+.logo-small {
+  width: 48px;
+  height: 48px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 67px;
+}
+
+.content {
+  max-width: 1132px;
+  font-size: 19px;
+  color: #1F2041;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container {
+  font-size: 19px;
+  line-height: 147%;
+}
+.container__card {
+  max-width: 282px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.container__fill {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+  margin-right: 40px;
+}
+.container__color-100 {
+  background-color: #1F2041;
+}
+.container__color-75 {
+  background-color: #575871;
+}
+.container__color-50 {
+  background-color: #8F90A0;
+}
+.container__color-25 {
+  background-color: #C7C7CF;
+}
+.container__color-5 {
+  background-color: #F3F4F5;
+}
+.container__color-purple {
+  background-color: #BC9CFF;
+}
+.container__color-green {
+  background-color: #6FCF97;
+}
+.container__text-subtitle {
+  font-weight: 700;
+}
+
+/******* Font**********/
+.font__container {
+  color: #1F2041;
+  line-height: 121%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 67px 369px;
+  grid-template-columns: 67px 369px;
+}
+.font__name-color {
+  color: #C7C7CF;
+  text-align: right;
+}
+.font__size-h1 {
+  font-size: 24px;
+}
+.font__size-h2 {
+  font-size: 19px;
+}
+.font__size-h3 {
+  font-size: 12px;
+}
+.font__size-h4 {
+  font-size: 14px;
+}
+.font__example {
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+.font__size-weight {
+  font-weight: 700;
+}
+.font__size-uppercase {
+  text-transform: uppercase;
+}

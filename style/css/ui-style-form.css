@@ -1,0 +1,191 @@
+.logo-small {
+  width: 48px;
+  height: 48px;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 67px;
+}
+
+.content {
+  max-width: 1132px;
+  font-size: 19px;
+  color: #1F2041;
+  margin-left: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/******* Text Field *********/
+.textfield {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.textfield__label-wrapper {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 116%;
+  color: #1F2041;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+.textfield__label-state {
+  color: #8F90A0;
+}
+.textfield__input {
+  width: 320px;
+  line-height: 171%;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+}
+.textfield__input-default {
+  color: #C7C7CF;
+  border: #C7C7CF 1px solid;
+}
+.textfield__input-hover {
+  color: #8F90A0;
+  border: #8F90A0 1px solid;
+}
+
+/************ dropdown **************/
+.dropdown, .dropdowndate {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.dropdown__label, .dropdowndate__label {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 116%;
+  color: #1F2041;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 5px;
+}
+.dropdown__wrapper, .dropdowndate__wrapper {
+  width: 320px;
+  color: #1F2041;
+  border: #C7C7CF 1px solid;
+  border-radius: 4px;
+  padding-left: 15px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown__placeholder, .dropdowndate__placeholder {
+  color: #575871;
+  line-height: 171%;
+}
+.dropdown__item-visually-hidden, .dropdowndate__item-visually-hidden {
+  display: none;
+}
+
+.dropdowndate {
+  width: 266px;
+}
+.dropdowndate__wrapper {
+  width: 266px;
+}
+
+.dropdown__arrow {
+  font-size: 12px;
+  color: #8F90A0;
+  padding-right: 16px;
+}
+
+/*************** date input**********/
+.dropdown__wrap {
+  width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.textfield__date-up {
+  text-transform: uppercase;
+}
+
+.dropdown__date-small {
+  width: 150px;
+}
+.dropdown__date-input {
+  width: 150px;
+  color: #575871;
+  border-color: #C7C7CF;
+}
+
+.email-subscribe__wrapper {
+  position: absolute;
+}
+
+.arrow-forward {
+  width: 44px;
+  height: 44px;
+  font-size: 20px;
+  position: relative;
+  bottom: 56px;
+  left: 280px;
+}
+
+._icon-arrow_forward {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #8BA4F9;
+}
