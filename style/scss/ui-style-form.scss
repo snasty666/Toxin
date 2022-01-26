@@ -142,13 +142,12 @@ $colorgr:#6FCF97;
 	}
 }
 .email-subscribe__wrapper{
+	width: 44px;
+	height: 44px;
 	position: absolute;
 }
 .arrow-forward{
-	width: 44px;
-	height: 44px;
 	font-size: 20px;
-
 	position:relative;
 	bottom:56px;
 	left:280px;
@@ -159,5 +158,6 @@ $colorgr:#6FCF97;
 	-webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 	color:#8BA4F9;
+
 }
 
