@@ -169,6 +169,12 @@
   border-color: #C7C7CF;
 }
 
+.email-subscribe__wrapper {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+}
+
 .arrow-forward {
   font-size: 20px;
   position: relative;
@@ -182,4 +188,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #8BA4F9;
+}
+
+.aaa {
+  margin: 50px;
 }
