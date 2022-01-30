@@ -198,7 +198,7 @@ $colorgr:#6FCF97;
 
 	&__arrow-full {
 		color: $color75;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	&__fullform {
@@ -241,5 +241,66 @@ $colorgr:#6FCF97;
 	&__less-unable {
 		border-color:rgba(31, 32, 65, 0.1);
 		color:rgba(31, 32, 65, 0.1);
+	}
+}
+.checkbox {
+	max-width:266px;
+	margin-top:40px;
+	margin-bottom: 20px;
+	&__container {
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__label {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color:$color100;
+	}
+
+	&__arrow {
+		color:$color50;
+		font-size: 12px;
+	}
+}
+
+.opencheckbox {
+	max-width:266px;
+
+	&__container {
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding-top: 10px;
+		padding-right: 10px;
+		padding-bottom: 10px;
+	}
+
+	&__label {
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 700;
+		color:$color100;
+	}
+
+	&__arrow-up {
+		color:$color50;
+		font-size: 12px;
+		transform: rotate(180deg);
+	}
+
+	&__expanded {
+		display: grid;
+		//разобраться с html. добаdить label. используя псевдоэлементы застилизовать чекбоксы
+	}
+
+	&__value {
 	}
 }
