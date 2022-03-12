@@ -243,7 +243,7 @@ $colorgr:#6FCF97;
 		color:rgba(31, 32, 65, 0.1);
 	}
 }
-.checkbox {
+.checkboxlist {
 	max-width:266px;
 	margin-top:40px;
 	margin-bottom: 20px;
@@ -270,7 +270,7 @@ $colorgr:#6FCF97;
 	}
 }
 
-.opencheckbox {
+.opencheckboxlist {
 	max-width:266px;
 
 	&__container {
@@ -297,8 +297,12 @@ $colorgr:#6FCF97;
 	}
 
 	&__expanded {
-		display: grid;
-		//разобраться с html. добаdить label. используя псевдоэлементы застилизовать чекбоксы
+		display: flex;
+		color:$color50;
+		margin-bottom:10px;
+	
+
+		//разобраться с html.  используя псевдоэлементы застилизовать чекбоксы
 	}
 
 	&__value {
