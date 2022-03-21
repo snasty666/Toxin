@@ -300,11 +300,96 @@ $colorgr:#6FCF97;
 		display: flex;
 		color:$color50;
 		margin-bottom:10px;
-	
-
-		//разобраться с html.  используя псевдоэлементы застилизовать чекбоксы
+		align-items: center;
 	}
 
 	&__value {
+		position: absolute;
+		z-index: -1;
+		opacity: 0;
 	}
 }
+.opencheckboxlist__value+label {
+		display: inline-flex;
+		align-items: center;
+		user-select: none;
+		// text-align: center;
+		margin-left:20px;
+		margin-bottom:10px;
+
+} 
+.opencheckboxlist__value::before+label::before{
+	content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid $color25;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+	z-index: 222222;
+}
+/* стили при наведении курсора на checkbox */
+.opencheckboxlist__value:not(:disabled):not(:checked)+label:hover::before {
+	border-color: $color50;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.opencheckboxlist__value:not(:disabled):active+label::before {
+	
+	border-color: $color50;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.opencheckboxlist__value:focus+label::before {
+	border-color: $color50;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.opencheckboxlist__value:focus:not(:checked)+label::before {
+	border-color: $color50;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.opencheckboxlist__value:checked+label::before {
+	border-color: $colorpur;
+	background-image: url("/img/check.svg");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.opencheckboxlist__value:disabled+label::before {
+	background-color: $color25;
+}
+
+
+
+
+// .opencheckboxlist__expanded::before+.opencheckboxlist__value:checked{
+//   background-image: url(/img/check.svg);
+// 	border-color: $colorpur;
+// }
+/* стили при наведении курсора на checkbox */
+// .opencheckboxlist__expanded:hover::before+.opencheckboxlist__value:not(:disabled):not(:checked){
+//   border-color: $color50;
+// }
+// /* стили для активного состояния чекбокса (при нажатии на него) */
+// .opencheckboxlist__value:not(:disabled):active+.opencheckboxlist__expanded::before {
+//   border-color: $colorpur;
+// }
+// /* стили для чекбокса, находящегося в фокусе */
+// .opencheckboxlist__value:focus+.opencheckboxlist__expanded::before {
+// 	border-color: $color50
+// }
+// /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+// .opencheckboxlist__value:not(:checked)+.opencheckboxlist__expanded::before {
+//   border-color: $color50;
+// }
+// /* стили для чекбокса, находящегося в состоянии disabled */
+// .opencheckboxlist__value:disabled+.opencheckboxlist__expanded::before {
+//   border-color: $color25;
+// 	background-color: $color25;
+// }

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .containerforall {
   margin-left: 140px;
 }
@@ -364,4 +365,79 @@
   display: flex;
   color: #8F90A0;
   margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+.opencheckboxlist__value {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.opencheckboxlist__value + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+.opencheckboxlist__value::before + label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  border: 1px solid #C7C7CF;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  z-index: 222222;
+}
+
+/* стили при наведении курсора на checkbox */
+.opencheckboxlist__value:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #8F90A0;
+}
+
+/* стили для активного чекбокса (при нажатии на него) */
+.opencheckboxlist__value:not(:disabled):active + label::before {
+  border-color: #8F90A0;
+}
+
+/* стили для чекбокса, находящегося в фокусе */
+.opencheckboxlist__value:focus + label::before {
+  border-color: #8F90A0;
+}
+
+/* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+.opencheckboxlist__value:focus:not(:checked) + label::before {
+  border-color: #8F90A0;
+}
+
+/* стили для чекбокса, находящегося в состоянии checked */
+.opencheckboxlist__value:checked + label::before {
+  border-color: #BC9CFF;
+  background-image: url("/img/check.svg");
+}
+
+/* стили для чекбокса, находящегося в состоянии disabled */
+.opencheckboxlist__value:disabled + label::before {
+  background-color: #C7C7CF;
+}
+
+/* стили при наведении курсора на checkbox */
