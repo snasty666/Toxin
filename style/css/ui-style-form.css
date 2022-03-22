@@ -386,11 +386,11 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  margin-left: 20px;
+  text-align: center;
   margin-bottom: 10px;
 }
 
-.opencheckboxlist__value::before + label::before {
+.opencheckboxlist__value + label::before {
   content: "";
   display: inline-block;
   width: 20px;
@@ -411,22 +411,22 @@
 
 /* стили при наведении курсора на checkbox */
 .opencheckboxlist__value:not(:disabled):not(:checked) + label:hover::before {
-  border-color: #8F90A0;
+  border-color: #BC9CFF;
 }
 
 /* стили для активного чекбокса (при нажатии на него) */
 .opencheckboxlist__value:not(:disabled):active + label::before {
-  border-color: #8F90A0;
+  border-color: #BC9CFF;
 }
 
 /* стили для чекбокса, находящегося в фокусе */
 .opencheckboxlist__value:focus + label::before {
-  border-color: #8F90A0;
+  border-color: #BC9CFF;
 }
 
 /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
 .opencheckboxlist__value:focus:not(:checked) + label::before {
-  border-color: #8F90A0;
+  border-color: #BC9CFF;
 }
 
 /* стили для чекбокса, находящегося в состоянии checked */
@@ -440,4 +440,47 @@
   background-color: #C7C7CF;
 }
 
-/* стили при наведении курсора на checkbox */
+.benefits {
+  max-width: 291px;
+  margin-top: 40px;
+}
+.benefits__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.benefits__image-container {
+  background: -webkit-gradient(linear, left top, left bottom, from(#BC9CFF), to(#8BA4F9));
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #8BA4F9;
+  margin-right: 10px;
+}
+.benefits__image {
+  font-size: 48px;
+  line-height: 85%;
+}
+.benefits__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.benefits__heading {
+  font-weight: 700;
+  color: #575871;
+  line-height: 140%;
+}
