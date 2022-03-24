@@ -442,9 +442,9 @@
 
 .benefits {
   max-width: 291px;
-  margin-top: 40px;
 }
 .benefits__container {
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,9 +478,15 @@
           flex-direction: column;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  line-height: 170%;
 }
 .benefits__heading {
   font-weight: 700;
-  color: #575871;
-  line-height: 140%;
+}
+.benefits__line {
+  width: 280px;
+  display: block;
+  height: 1px;
+  border-top: 1px solid rgba(31, 32, 65, 0.1);
+  margin-top: 17px;
 }
