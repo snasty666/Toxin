@@ -7,7 +7,20 @@ $colorpur:#BC9CFF;
 $colorgr:#6FCF97;
 
 .containerforall{
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.leftcolumn{
 	margin-left:140px;
+	margin-right:126px;
+	border:1px solid red;
+}
+.centercolumn{
+	border:1px solid green;
+}
+.rightcolumn{
+	border:1px solid blue;
 }
 .logo-small {
 	width: 48px;
@@ -243,6 +256,14 @@ $colorgr:#6FCF97;
 		color:rgba(31, 32, 65, 0.1);
 	}
 }
+
+/******************checkboxes***************/
+.formheader{
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color:$color100;
+}
 .checkboxlist {
 	max-width:266px;
 	margin-top:40px;
@@ -313,7 +334,6 @@ $colorgr:#6FCF97;
 		display: inline-flex;
 		align-items: center;
 		user-select: none;
-		text-align: center;
 		margin-bottom:10px;
 
 } 
@@ -368,7 +388,7 @@ $colorgr:#6FCF97;
 	
 
 	&__container {
-		margin-top: 40px;
+		margin-top: 20px;
 		display: flex;
 		flex-direction: row;
 		align-items: flex-start;
@@ -408,3 +428,20 @@ $colorgr:#6FCF97;
 		margin-top:17px;
 	}
 }
+.checkbox {
+
+	&__buttons{
+		margin-bottom:47px;
+	}
+	&__formheader {
+		margin-bottom:17px;
+	}
+	&__value {
+		text-align: left;
+	}
+}
+
+
+
+
+

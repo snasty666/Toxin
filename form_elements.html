@@ -14,209 +14,255 @@
 		<img src="img/logo.svg" alt="Toxin">
 	</div>
 	<div class="containerforall">
-		<div class="textfield textfield-active">
-			<form action="#" method="post" class="textfield__form">
-				<div class="textfield__label-wrapper">
-					<label for="email"> text field </label>
-					<span class="textfield__label-state"> default </span>
-				</div>
-				<input name="email" type="email" class="textfield__input textfield__input-default" id="email" placeholder="Email" autocomplete="email">
-			</form>
-		</div>
-		<div class="textfield textfield-hover">
-			<form action="#" method="post" class="textfield__form">
-				<div class="textfield__label-wrapper">
-					<label for="text-input"> text field </label>
-					<span class="textfield__label-state"> hover/focus </span>
-				</div>
-				<input name="text-input" type="text" class="textfield__input textfield__input-hover" id="text-input" placeholder="This is pretty awesome">
-			</form>
-		</div>
-		<div class="dropdown dropdown__guest-small">
-			<span class="dropdown__label"> dropdown </span>
-			<div class="dropdown__wrapper">
-				<div class="dropdown__placeholder"> <span>Сколько гостей</span></div>
-				<span class="_icon-expand_more dropdown__arrow"></span>
-				<ul class="dropdown__items dropdown__item-visually-hidden"> 
-					<li class="dropdown__item-visually-hidden dropdown__item-adult">Взрослые</li>
-					<li class="dropdown__item-visually-hidden dropdown__item-child">Дети</li>
-					<li class="dropdown__item-visually-hidden dropdown__item-infant">Младенцы</li>
-				</ul>
-			</div>
-		</div>
-		<div class="textfield input__date">
-			<form action="#" method="post" class="textfield__form">
-				<div class="textfield__label-wrapper">
-					<label for="date-input"> masked text field </label>
-				</div>
-				<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up" id="date-input">
-			</form>
-		</div>
-		<div class="dropdown__wrap"> 
-			<div class="textfield dropdown__date-small">
-				<form action="#" method="post" class="textfield__form dropdown__date-form">
-					<div class="textfield__label-wrapper dropdown__date-label">
-						<label for="date-input"> date Dropdown </label>
+		<div class="leftcolumn">
+			<div class="textfield textfield-active">
+				<form action="#" method="post" class="textfield__form">
+					<div class="textfield__label-wrapper">
+						<label for="email"> text field </label>
+						<span class="textfield__label-state"> default </span>
 					</div>
-					<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up dropdown__date-input" id="date-input">
+					<input name="email" type="email" class="textfield__input textfield__input-default" id="email" placeholder="Email" autocomplete="email">
 				</form>
 			</div>
-			<div class="textfield dropdown__date-small">
-				<form action="#" method="post" class="textfield__form dropdown__date-form">
-					<div class="textfield__label-wrapper dropdown__date-label">
-						<label for="date-input"> date Dropdown </label>
+			<div class="textfield textfield-hover">
+				<form action="#" method="post" class="textfield__form">
+					<div class="textfield__label-wrapper">
+						<label for="text-input"> text field </label>
+						<span class="textfield__label-state"> hover/focus </span>
 					</div>
-					<input name="date-input" type="date" class="textfield__input textfield__input-hover  textfield__date-up dropdown__date-input" id="date-input">
+					<input name="text-input" type="text" class="textfield__input textfield__input-hover" id="text-input" placeholder="This is pretty awesome">
 				</form>
 			</div>
-		</div>
-		<div class="dropdowndate dropdown__date">
-			<span class="dropdowndate__label"> filter date dropdown </span>
-			<div class="dropdowndate__wrapper">
-				<div class="dropdowndate__placeholder"> <span>19 авг - 23 авг</span></div>
-				<span class="_icon-expand_more dropdown__arrow"></span>
-	<!-- Как-то надо будет вставлять выпадающий календарь -->
-			</div>
-		</div>
-		<div class="textfield textfield-active">
-			<form action="#" method="post" class="textfield__form">
-				<div class="textfield__label-wrapper">
-					<label for="email-subscribe"> subscription text field </label>
-				</div>
-				<div class="email-subscribe__wrapper">
-					<input name="email-subscribe" type="email" class="textfield__input textfield__input-default" id="email-subscribe" placeholder="Email" autocomplete="email">
-					<div class="arrow-forward"><span class="_icon-arrow_forward"></span>
-				</div>
-			</div>
-			</form>
-		</div>
-		<div class="dropdown dropdown__room-small">
-			<div class="dropdown__label-wrapper">
+			<div class="dropdown dropdown__guest-small">
 				<span class="dropdown__label"> dropdown </span>
-				<span class="dropdown__label-state"> default </span>
-			</div>
-			<div class="dropdown__wrapper">
-				<div class="dropdown__placeholder"> <span>2 спальни, 2 кровати...</span></div>
-				<span class="_icon-expand_more dropdown__arrow"></span>
-				<ul class="dropdown__items dropdown__item-visually-hidden"> 
-					<li class="dropdown__item-visually-hidden dropdown__item-bedroom">Спальни</li>
-					<li class="dropdown__item-visually-hidden dropdown__item-bed">Кровати</li>
-					<li class="dropdown__item-visually-hidden dropdown__item-bathroom">Ванные комнаты</li>
-				</ul>
-			</div>
-		</div>
-		<div class="dropdown dropdown__room-full">
-			<div class="dropdown__label-wrapper">
-				<span class="dropdown__label"> dropdown </span>
-				<span class="dropdown__label-state"> expanded </span>
-			</div>
-			<div class="dropdown__wrapper-full">
-				<div class="dropdown__placeholder-full"> 
-					<span>2 спальни, 2 кровати...</span>
-					<span class="_icon-expand_more dropdown__arrow-full"></span>
-				</div>
-				<div class="dropdown__fullform">
-					<ul class="fullform__items"> 
-						<li class="fullform__item fullform__item-bedroom">Спальни
-							<div class="counter">
-								<div class="counter__less counter__circle"><span>-</span></div>
-								<span class="counter__value">2</span> 
-								<div class="counter__more counter__circle"><span>+</span</div>
-							</div>
-						</li>
-						<li class="fullform__item fullform__item-bed">Кровати
-							<div class="counter">
-								<div class="counter__less counter__circle"><span>-</span></div>
-								<span class="counter__value">2</span> 
-								<div class="counter__more counter__circle"><span>+</span></div>
-							</div>
-						</li>
-						<li class="fullform__item fullform__item-bathroom">Ванные комнаты
-							<div class="counter">
-								<div class="counter__less counter__less-unable counter__circle"><span>-</span></div>
-								<span class="counter__value">0</span> 
-								<div class="counter__more counter__circle"><span>+</span</div>
-							</div>
-						</li>
+				<div class="dropdown__wrapper">
+					<div class="dropdown__placeholder"> <span>Сколько гостей</span></div>
+					<span class="_icon-expand_more dropdown__arrow"></span>
+					<ul class="dropdown__items dropdown__item-visually-hidden"> 
+						<li class="dropdown__item-visually-hidden dropdown__item-adult">Взрослые</li>
+						<li class="dropdown__item-visually-hidden dropdown__item-child">Дети</li>
+						<li class="dropdown__item-visually-hidden dropdown__item-infant">Младенцы</li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<div class="checkboxlist">
-			<div class="checkboxlist__container">
-				<span class="checkboxlist__label">expandable checkbox list
-				</span>
-				<span class="checkboxlist__arrow _icon-expand_more"></span>
+			<div class="textfield input__date">
+				<form action="#" method="post" class="textfield__form">
+					<div class="textfield__label-wrapper">
+						<label for="date-input"> masked text field </label>
+					</div>
+					<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up" id="date-input">
+				</form>
+			</div>
+			<div class="dropdown__wrap"> 
+				<div class="textfield dropdown__date-small">
+					<form action="#" method="post" class="textfield__form dropdown__date-form">
+						<div class="textfield__label-wrapper dropdown__date-label">
+							<label for="date-input"> date Dropdown </label>
+						</div>
+						<input name="date-input" type="date" class="textfield__input textfield__input-default textfield__date-up dropdown__date-input" id="date-input">
+					</form>
+				</div>
+				<div class="textfield dropdown__date-small">
+					<form action="#" method="post" class="textfield__form dropdown__date-form">
+						<div class="textfield__label-wrapper dropdown__date-label">
+							<label for="date-input"> date Dropdown </label>
+						</div>
+						<input name="date-input" type="date" class="textfield__input textfield__input-hover  textfield__date-up dropdown__date-input" id="date-input">
+					</form>
+				</div>
+			</div>
+			<div class="dropdowndate dropdown__date">
+				<span class="dropdowndate__label"> filter date dropdown </span>
+				<div class="dropdowndate__wrapper">
+					<div class="dropdowndate__placeholder"> <span>19 авг - 23 авг</span></div>
+					<span class="_icon-expand_more dropdown__arrow"></span>
+		<!-- Как-то надо будет вставлять выпадающий календарь -->
+				</div>
+			</div>
+			<div class="textfield textfield-active">
+				<form action="#" method="post" class="textfield__form">
+					<div class="textfield__label-wrapper">
+						<label for="email-subscribe"> subscription text field </label>
+					</div>
+					<div class="email-subscribe__wrapper">
+						<input name="email-subscribe" type="email" class="textfield__input textfield__input-default" id="email-subscribe" placeholder="Email" autocomplete="email">
+						<div class="arrow-forward"><span class="_icon-arrow_forward"></span>
+					</div>
+				</div>
+				</form>
+			</div>
+			<div class="dropdown dropdown__room-small">
+				<div class="dropdown__label-wrapper">
+					<span class="dropdown__label"> dropdown </span>
+					<span class="dropdown__label-state"> default </span>
+				</div>
+				<div class="dropdown__wrapper">
+					<div class="dropdown__placeholder"> <span>2 спальни, 2 кровати...</span></div>
+					<span class="_icon-expand_more dropdown__arrow"></span>
+					<ul class="dropdown__items dropdown__item-visually-hidden"> 
+						<li class="dropdown__item-visually-hidden dropdown__item-bedroom">Спальни</li>
+						<li class="dropdown__item-visually-hidden dropdown__item-bed">Кровати</li>
+						<li class="dropdown__item-visually-hidden dropdown__item-bathroom">Ванные комнаты</li>
+					</ul>
+				</div>
+			</div>
+			<div class="dropdown dropdown__room-full">
+				<div class="dropdown__label-wrapper">
+					<span class="dropdown__label"> dropdown </span>
+					<span class="dropdown__label-state"> expanded </span>
+				</div>
+				<div class="dropdown__wrapper-full">
+					<div class="dropdown__placeholder-full"> 
+						<span>2 спальни, 2 кровати...</span>
+						<span class="_icon-expand_more dropdown__arrow-full"></span>
+					</div>
+					<div class="dropdown__fullform">
+						<ul class="fullform__items"> 
+							<li class="fullform__item fullform__item-bedroom">Спальни
+								<div class="counter">
+									<div class="counter__less counter__circle"><span>-</span></div>
+									<span class="counter__value">2</span> 
+									<div class="counter__more counter__circle"><span>+</span</div>
+								</div>
+							</li>
+							<li class="fullform__item fullform__item-bed">Кровати
+								<div class="counter">
+									<div class="counter__less counter__circle"><span>-</span></div>
+									<span class="counter__value">2</span> 
+									<div class="counter__more counter__circle"><span>+</span></div>
+								</div>
+							</li>
+							<li class="fullform__item fullform__item-bathroom">Ванные комнаты
+								<div class="counter">
+									<div class="counter__less counter__less-unable counter__circle"><span>-</span></div>
+									<span class="counter__value">0</span> 
+									<div class="counter__more counter__circle"><span>+</span</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="checkboxlist">
+				<div class="checkboxlist__container">
+					<span class="checkboxlist__label">expandable checkbox list
+					</span>
+					<span class="checkboxlist__arrow _icon-expand_more"></span>
+				</div>
+			</div>
+			<div class="opencheckboxlist">
+				<div class="opencheckboxlist__container">
+					<span class="opencheckboxlist__label">expandable checkbox list
+					</span>
+					<span class="opencheckboxlist__arrow-up _icon-expand_more">
+					</span>
+				</div>
+				<div class="opencheckboxlist__valuecontainer">
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-1" value="breakfast" class="opencheckboxlist__value" id="checkboxvalue-1">
+						<label for="checkboxvalue-1"> Завтрак </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-2" value="table" class="opencheckboxlist__value" id="checkboxvalue-2" checked>
+						<label for="checkboxvalue-2"> Письменный стол </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-3" value="chair" class="opencheckboxlist__value" id="checkboxvalue-3" checked>
+						<label for="checkboxvalue-3"> Стул для кормления </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-4" value="bed" class="opencheckboxlist__value" id="checkboxvalue-4" checked>
+						<label for="checkboxvalue-4"> Кроватка </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-5" value="tvset" class="opencheckboxlist__value" id="checkboxvalue-5">
+						<label for="checkboxvalue-5"> Телевизор </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-6" value="shampoo" class="opencheckboxlist__value" id="checkboxvalue-6">
+						<label for="checkboxvalue-6"> Шампунь </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-7" value="tvset" class="opencheckboxlist__value" id="checkboxvalue-7">
+						<label for="checkboxvalue-7"> Телевизор </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper">
+						<input type="checkbox" name="checkboxvalue-8" value="shampoo" class="opencheckboxlist__value" id="checkboxvalue-8">
+						<label for="checkboxvalue-8"> Шампунь </label>
+					</div>
+				</div>
+			</div>
+			<div class="benefits">
+				<div class="benefits__container">
+					<div class="benefits__image-container">
+						<span class="benefits__image _icon-emoticon"></span>
+					</div>
+					<div class="benefits__text">
+						<p class="benefits__heading">Комфорт</p>
+						<p class="benefits__description">Шумопоглощающие стены</p>
+					</div>
+				</div>
+				<div class="benefits__line"></div>
+			</div>
+			<div class="benefits">
+				<div class="benefits__container">
+					<div class="benefits__image-container">
+						<span class="_icon-city benefits__image"> </span>
+					</div>
+					<div class="benefits__text">
+						<p class="benefits__heading">Удобство</p>
+						<p class="benefits__description">Окно в каждой из спален</p>
+					</div>
+				</div>
+				<div class="benefits__line"></div>
 			</div>
 		</div>
-		<div class="opencheckboxlist">
-			<div class="opencheckboxlist__container">
-				<span class="opencheckboxlist__label">expandable checkbox list
-				</span>
-				<span class="opencheckboxlist__arrow-up _icon-expand_more">
-				</span>
-			</div>
-			<div class="opencheckboxlist__valuecontainer">
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-1" value="breakfast" class="opencheckboxlist__value" id="checkboxvalue-1">
-					<label for="checkboxvalue-1"> Завтрак </label>
+
+
+
+		<div class="centercolumn">
+			<div class="checkbox__buttons">
+				<div class="checkbox__formheader formheader">
+					<span> checkbox buttons</span>
 				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-2" value="table" class="opencheckboxlist__value" id="checkboxvalue-2" checked>
-					<label for="checkboxvalue-2"> Письменный стол </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-3" value="chair" class="opencheckboxlist__value" id="checkboxvalue-3" checked>
-					<label for="checkboxvalue-3"> Стул для кормления </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-4" value="bed" class="opencheckboxlist__value" id="checkboxvalue-4" checked>
-					<label for="checkboxvalue-4"> Кроватка </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-5" value="tvset" class="opencheckboxlist__value" id="checkboxvalue-5">
-					<label for="checkboxvalue-5"> Телевизор </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-6" value="shampoo" class="opencheckboxlist__value" id="checkboxvalue-6">
-					<label for="checkboxvalue-6"> Шампунь </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-7" value="tvset" class="opencheckboxlist__value" id="checkboxvalue-7">
-					<label for="checkboxvalue-7"> Телевизор </label>
-				</div>
-				<div class="opencheckboxlist__expanded-wrapper">
-					<input type="checkbox" name="checkboxvalue-8" value="shampoo" class="opencheckboxlist__value" id="checkboxvalue-8">
-					<label for="checkboxvalue-8"> Шампунь </label>
+				<div class="opencheckboxlist__valuecontainer checkbox__values">
+					<div class="opencheckboxlist__expanded-wrapper checkbox__value">
+						<input type="checkbox" name="button-smoke" value="button-smoke" class="opencheckboxlist__value" id="button-smoke">
+						<label for="button-smoke"> Можно курить </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper checkbox__value">
+						<input type="checkbox" name="button-pets" value="button-pets" class="opencheckboxlist__value" id="button-pets" checked>
+						<label for="button-pets"> Можно с питомцами </label>
+					</div>
+					<div class="opencheckboxlist__expanded-wrapper checkbox__value">
+						<input type="checkbox" name="button-guests" value="button-guests" class="opencheckboxlist__value" id="button-guests" checked>
+						<label for="button-guests"> Можно пригласить гостей <br> (до 10 человек) </label>
+					</div>
 				</div>
 			</div>
+			<div class="radiobuttons">
+				<div class="radiobuttons__formheader formheader">
+					<span>radio buttons</span>
+				</div>
+				<div class="radiobuttons__values">
+					<div class="radiobuttons__value">
+						<input type="radio"> 
+					</div>
+				</div>
+			</div>
+
+
 		</div>
-		<div class="benefits">
-			<div class="benefits__container">
-				<div class="benefits__image-container">
-					<span class="benefits__image _icon-emoticon"></span>
-				</div>
-				<div class="benefits__text">
-					<p class="benefits__heading">Комфорт</p>
-					<p class="benefits__description">Шумопоглощающие стены</p>
-				</div>
-			</div>
-			<div class="benefits__line"></div>
-		</div>
-		<div class="benefits">
-			<div class="benefits__container">
-				<div class="benefits__image-container">
-					<span class="_icon-city benefits__image> </span>
-				</div>
-				<div class="benefits__text">
-					<p class="benefits__heading">Удобство</p>
-					<p class="benefits__description">Окно в каждой из спален</p>
-				</div>
-			</div>
-			<div class="benefits__line"></div>
+		
+		
+		
+		
+		
+		
+		
+		<div class="rightcolumn">
 		</div>
 	</div>
-
-</div>
+<!-- </div> -->
 </body>
 </html>
